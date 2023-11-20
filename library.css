@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;500;600;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+.assgn-head {
+    color: #000;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+:root {
+    font-size: 16px;
+
+    /*font-family*/
+    --body-font: 'Poppins', sans-serif;
+    --heading-font: 'Playpen Sans', cursive;
+    --cta-font: 'Pacifico', cursive;
+
+    /*colors*/
+    --primary-color: #ffd6ff;
+    --secondary-color: #bbd0ff;
+    --cta-color: #c8b6ff;
+    /*font-color*/
+    --font-primary-color: #444;
+    --font-secondary-color: #77a1ff;
+    --font-cta-color: #ff3dff;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: var(--body-font);
+    color: var(--font-primary-color);
+    font-size: 1.15rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.15rem;
+    line-height: 3rem;
+}
+
+p {
+    width: 95rem;
+    /* margin-left: 1rem; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--font-secondary-color);
+    letter-spacing: 0.25rem;
+}
+h1 {
+    font-size: 1.75rem;
+}
+
+.cta {
+    font-family: var(--cta-font);
+    background-color: var(--cta-color);
+    color: var(--font-cta-color);
+    font-size: 1.55rem;
+    letter-spacing: 0.20rem;
+    word-spacing: 0.15rem;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+}
+
+/*----------BUTTON----------*/
+.button,
+.button:link,
+.button:visited {
+    /*cta included here again*/
+    font-family: var(--cta-font);
+    background-color: var(--cta-color);
+    color: var(--font-cta-color);
+    font-size: 1.55rem;
+    letter-spacing: 0.20rem;
+    word-spacing: 0.15rem;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+
+    /*button properties*/
+    width: auto;
+    margin: 1rem;
+    border-radius: 0.45rem;
+    border: 2px dotted transparent;
+    transition: border 0.2s;
+}
+
+.button:hover,
+.button:active {
+    border: 2px solid var(--secondary-color);
+}
+
+
+/*----------LINK----------*/
+.link,
+.link:link,
+.link:visited {
+    text-decoration: none;
+    margin: 1rem;
+    color: var(--font-cta-color);
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.link:hover,
+.link:active {
+    border-bottom: 2px solid var(--cta-color);
+}
+
+
+/*----------HEADER NAV MENU----------*/
+header {
+    position: relative;
+    background: url();
+    display: flex;
+    justify-content: space-between;
+    border: 1px dotted var(--secondary-color);
+}
+
+.logo {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    color: var(--font-cta-color);
+    font-family: var(--heading-font);
+    font-weight: 500;
+    text-transform: capitalize;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 0;
+    margin-top: 3.25rem;
+    margin-right: 0.25rem;
+}
+
+nav ul {
+    margin: auto 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-inline-start: 0;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0.25rem;
+    margin: auto 1rem;
+}
+
+
+/* Mobile Nav */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*----------FORM----------*/
+.input-text {
+    color: var(--font-primary-color);
+    font-size: 1.8rem;
+    padding: 1.3rem;
+    border: none;
+    width: 100%;
+    max-width: 40rem;
+    border-radius: 8px;
+    display: block;
+    background: var(--secondary-color);
+    margin: 1rem;
+    margin-left: 0;
+  }
+  
+  .input-text-wrapper input:focus {
+    outline: none;
+  }
+  
+  .btn--submit {
+    width: 100%;
+    max-width: 40rem;
+  }
+
+
+/*----------CARD----------*/
+.card {
+    background-color: var(--secondary-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+  }
+
+.card p {
+    width: 85%;
+    line-height: 2rem;
+}
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+.card img {
+    border-radius: 5px 5px 0 0;
+    width: 70%;
+    height: 30%;
+    margin: 0.5rem;
+  }
+
+
+/*----------ALERT----------*/
+.alert {
+    padding: 20px;
+    background-color: rgb(204, 44, 33);
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    border-radius: 8px;
+    border-color: rgb(219, 55, 43);
+    width: 25%;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+  
+  .success {
+    padding: 20px;
+    background-color: #65e054;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    border-radius: 8px;
+    border-color: rgb(15, 202, 78);
+    margin-top: 5px;
+    width: 25%;
+  }
+
+
+
+
+/*----------zzz----------*/
+

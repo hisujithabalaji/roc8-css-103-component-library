@@ -2,9 +2,92 @@
     <html>
       <head>
         <title></title>
+        <link rel="stylesheet" href="media-query.css">
         <link rel="stylesheet" href="library.css">
+        <script src="https://kit.fontawesome.com/20da122d68.js" crossorigin="anonymous"></script>
       </head>
       <body>
-        <script></script>
+        <div class="navigation-container">
+          <h2 class="assgn-head">Header and Navigation Menu</h2>
+          <header id="home">
+            <img class="logo" src="logo.png">
+            <nav>
+              <ul class="main-nav">
+                <li><a class="link" href="#">About</a></li>
+                <li><a class="link" href="#">Contact</a></li>
+                <li><a class="link" href="#">Other</a></li>
+              </ul>
+              <button onclick="navToggle()" id="nav-btn" class="button mobile-nav-icon"><i class="fa-solid fa-bars"></i></button>
+            </nav>
+          </header>
+        </div>
+
+        <br>
+        <div class="button-container">
+          <h2 class="assgn-head">Button</h2>
+          <button class="button">Button</button>
+          <a href="#" class="link">Link</a>
+        </div>
+
+        <br>
+        <div class="form-container">
+          <h2 class="assgn-head">Form</h2>
+          <form action="">
+            <input class="input-text input-text-full-name" type="text" placeholder="Full Name"/>
+            <input class="input-text input-text-email" type="email" placeholder="Email"/>
+            <input class="input-text input-text-password" type="password" placeholder="Password"/>
+            <button class="button btn--submit">Signup</button>          
+          </form>
+        </div>
+
+        <br>
+        <div class="card-container">
+          <h2 class="assgn-head">Card</h2>
+          <div class="card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Childhood_Joy.jpg/1920px-Childhood_Joy.jpg"
+              alt="nature_img"
+            />
+            <div class="container">
+              <h4><b>Nature</b></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta illum odit quis cupiditate eos, nisi sunt laborum, iste vel nemo iusto officia perferendis ad quidem, rem in dolore minima impedit.</p>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <div class="alert-container">
+          <h2 class="assgn-head">Alert</h2>
+          <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';"
+              >&times;</span
+            >
+            <strong>Error message!</strong>
+          </div>
+          <div class="success">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';"
+              >&times;</span
+            >
+            <strong>Success message!</strong>
+          </div>
+        </div>
+        
+        <br><br>
+        <div class="typography-container">
+          <h2 class="assgn-head">Typography</h2>
+          <h1>H1 Heading</h1>
+          <h2>H2 Heading</h2>
+          <h3>H3 Heading</h3>
+          <h4>H4 Heading</h4>
+          <h5>H5 Heading</h5>
+          <h6>H6 Heading</h6>
+          <p>Paragraph: Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit autem ullam libero iure. Neque magni quidem fuga. Ex fugit voluptatibus molestiae sequi modi, aperiam, enim quos, placeat magnam sed mollitia.
+          Totam, rerum id adipisci amet pariatur temporibus! Magni unde debitis neque, fuga commodi maxime? Ex, minima corporis! Doloremque iste saepe debitis, animi, illo consequuntur enim quidem esse est, autem dicta.</p>
+        </div>
+        <footer>
+
+        </footer>
+
+        <script src="script.js"></script>
       </body>
     </html>    
